@@ -1,1 +1,1 @@
-# S.bicolor-RNAseq
+# S.bicolorRNAseq
