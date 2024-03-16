@@ -11,13 +11,13 @@ library(Rsubread)
 #' @return A list containing featureCounts result and raw counts.
 run_featureCounts <- function(bam_path, gtf) {
   # Perform featureCounts
-  fc_result <- featureCounts(files = list.files(path = bam_path, pattern = "\\.bam$", full.names = TRUE),
-                             annot.ext = gtf,
-                             isGTFAnnotationFile = TRUE,
-                             GTF.featureType = "exon",
-                             GTF.attrType = "gene_id",
-                             useMetaFeatures = TRUE,
-                             isPairedEnd = TRUE)
+  fc_result <- Rsubread::featureCounts(files = list.files(path = bam_path, pattern = "\\.bam$", full.names = TRUE),
+                                       annot.ext = gtf,
+                                       isGTFAnnotationFile = TRUE,
+                                       GTF.featureType = "exon",
+                                       GTF.attrType = "gene_id",
+                                       useMetaFeatures = TRUE,
+                                       isPairedEnd = TRUE)
   
   # Extract and rename raw counts
   raw_counts <- fc_result$counts
