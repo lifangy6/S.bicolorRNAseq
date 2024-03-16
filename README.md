@@ -1,6 +1,6 @@
-# S.bicolorRNAseq
+# Sorghum bicolor RNA-Seq Analysis
 
-Check repository [wiki](https://github.com/lifangy6/S.bicolorRNAseq/wiki) for details
+Check repository [Wiki](https://github.com/lifangy6/S.bicolorRNAseq/wiki) for details
 
 ## Tree Structure
 
