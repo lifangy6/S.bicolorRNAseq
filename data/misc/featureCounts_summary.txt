@@ -1,0 +1,141 @@
+        ==========     _____ _    _ ____  _____  ______          _____  
+        =====         / ____| |  | |  _ \|  __ \|  ____|   /\   |  __ \ 
+          =====      | (___ | |  | | |_) | |__) | |__     /  \  | |  | |
+            ====      \___ \| |  | |  _ <|  _  /|  __|   / /\ \ | |  | |
+              ====    ____) | |__| | |_) | | \ \| |____ / ____ \| |__| |
+        ==========   |_____/ \____/|____/|_|  \_\______/_/    \_\_____/
+       Rsubread 2.16.1
+
+//========================== featureCounts setting ===========================\\
+||                                                                            ||
+||             Input files : 15 BAM files                                     ||
+||                                                                            ||
+||                           seed_dry_1.bam                                   ||
+||                           seed_dry_2.bam                                   ||
+||                           seed_dry_3.bam                                   ||
+||                           seed_plasma_1.bam                                ||
+||                           seed_plasma_2.bam                                ||
+||                           seed_plasma_3.bam                                ||
+||                           seed_wt_1.bam                                    ||
+||                           seed_wt_2.bam                                    ||
+||                           seed_wt_3.bam                                    ||
+||                           shoot_plasma_1.bam                               ||
+||                           shoot_plasma_2.bam                               ||
+||                           shoot_plasma_3.bam                               ||
+||                           shoot_wt_1.bam                                   ||
+||                           shoot_wt_2.bam                                   ||
+||                           shoot_wt_3.bam                                   ||
+||                                                                            ||
+||              Paired-end : yes                                              ||
+||        Count read pairs : yes                                              ||
+||              Annotation : Sbicolor_annotations.gtf (GTF)                   ||
+||      Dir for temp files : .                                                ||
+||                 Threads : 1                                                ||
+||                   Level : meta-feature level                               ||
+||      Multimapping reads : counted                                          ||
+|| Multi-overlapping reads : not counted                                      ||
+||   Min overlapping bases : 1                                                ||
+||                                                                            ||
+\\============================================================================//
+
+//================================= Running ==================================\\
+||                                                                            ||
+|| Load annotation file Sbicolor_annotations.gtf ...                          ||
+||    Features : 266301                                                       ||
+||    Meta-features : 34129                                                   ||
+||    Chromosomes/contigs : 90                                                ||
+||                                                                            ||
+|| Process BAM file seed_dry_1.bam...                                         ||
+||    Paired-end reads are included.                                          ||
+||    Total alignments : 38860848                                             ||
+||    Successfully assigned alignments : 17656177 (45.4%)                     ||
+||    Running time : 4.71 minutes                                             ||
+||                                                                            ||
+|| Process BAM file seed_dry_2.bam...                                         ||
+||    Paired-end reads are included.                                          ||
+||    Total alignments : 18472229                                             ||
+||    Successfully assigned alignments : 8721793 (47.2%)                      ||
+||    Running time : 1.02 minutes                                             ||
+||                                                                            ||
+|| Process BAM file seed_dry_3.bam...                                         ||
+||    Paired-end reads are included.                                          ||
+||    Total alignments : 30815172                                             ||
+||    Successfully assigned alignments : 14419986 (46.8%)                     ||
+||    Running time : 1.83 minutes                                             ||
+||                                                                            ||
+|| Process BAM file seed_plasma_1.bam...                                      ||
+||    Paired-end reads are included.                                          ||
+||    Total alignments : 68416497                                             ||
+||    Successfully assigned alignments : 32597808 (47.6%)                     ||
+||    Running time : 22.36 minutes                                            ||
+||                                                                            ||
+|| Process BAM file seed_plasma_2.bam...                                      ||
+||    Paired-end reads are included.                                          ||
+||    Total alignments : 27390808                                             ||
+||    Successfully assigned alignments : 17988677 (65.7%)                     ||
+||    Running time : 2.06 minutes                                             ||
+||                                                                            ||
+|| Process BAM file seed_plasma_3.bam...                                      ||
+||    Paired-end reads are included.                                          ||
+||    Total alignments : 34280543                                             ||
+||    Successfully assigned alignments : 20552672 (60.0%)                     ||
+||    Running time : 2.35 minutes                                             ||
+||                                                                            ||
+|| Process BAM file seed_wt_1.bam...                                          ||
+||    Paired-end reads are included.                                          ||
+||    Total alignments : 90419191                                             ||
+||    Successfully assigned alignments : 35677074 (39.5%)                     ||
+||    Running time : 41.29 minutes                                            ||
+||                                                                            ||
+|| Process BAM file seed_wt_2.bam...                                          ||
+||    Paired-end reads are included.                                          ||
+||    Total alignments : 36098891                                             ||
+||    Successfully assigned alignments : 20354028 (56.4%)                     ||
+||    Running time : 3.37 minutes                                             ||
+||                                                                            ||
+|| Process BAM file seed_wt_3.bam...                                          ||
+||    Paired-end reads are included.                                          ||
+||    Total alignments : 43649190                                             ||
+||    Successfully assigned alignments : 16918718 (38.8%)                     ||
+||    Running time : 6.24 minutes                                             ||
+||                                                                            ||
+|| Process BAM file shoot_plasma_1.bam...                                     ||
+||    Paired-end reads are included.                                          ||
+||    Total alignments : 53091918                                             ||
+||    Successfully assigned alignments : 44993083 (84.7%)                     ||
+||    Running time : 6.60 minutes                                             ||
+||                                                                            ||
+|| Process BAM file shoot_plasma_2.bam...                                     ||
+||    Paired-end reads are included.                                          ||
+||    Total alignments : 26340094                                             ||
+||    Successfully assigned alignments : 22875042 (86.8%)                     ||
+||    Running time : 1.47 minutes                                             ||
+||                                                                            ||
+|| Process BAM file shoot_plasma_3.bam...                                     ||
+||    Paired-end reads are included.                                          ||
+||    Total alignments : 25730221                                             ||
+||    Successfully assigned alignments : 23141753 (89.9%)                     ||
+||    Running time : 1.22 minutes                                             ||
+||                                                                            ||
+|| Process BAM file shoot_wt_1.bam...                                         ||
+||    Paired-end reads are included.                                          ||
+||    Total alignments : 53271332                                             ||
+||    Successfully assigned alignments : 44888969 (84.3%)                     ||
+||    Running time : 6.81 minutes                                             ||
+||                                                                            ||
+|| Process BAM file shoot_wt_2.bam...                                         ||
+||    Paired-end reads are included.                                          ||
+||    Total alignments : 26515887                                             ||
+||    Successfully assigned alignments : 22700716 (85.6%)                     ||
+||    Running time : 1.42 minutes                                             ||
+||                                                                            ||
+|| Process BAM file shoot_wt_3.bam...                                         ||
+||    Paired-end reads are included.                                          ||
+||    Total alignments : 25233217                                             ||
+||    Successfully assigned alignments : 23299632 (92.3%)                     ||
+||    Running time : 1.13 minutes                                             ||
+||                                                                            ||
+|| Write the final count table.                                               ||
+|| Write the read assignment summary.                                         ||
+||                                                                            ||
+\\============================================================================//

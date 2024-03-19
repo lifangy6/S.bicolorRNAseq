@@ -44,11 +44,14 @@ done
 module load NiaEnv/2019b
 module load samtools/1.13
 
-# 4. Convert SAM files to BAM files
+# 4. Convert SAM files to BAM files and sort them
 for sam_file in "$OUTPUT_DIR"/*.sam; do
     # Extract file name without extension
     file_name=$(basename "$sam_file" .sam)
     # Convert SAM to BAM
-    samtools view -@ 8 -b -o "$BAM_DIR/${file_name}.bam" "$sam_file"
+    samtools view -@ 8 -b -o "$BAM_DIR/${file_name}_unsorted.bam" "$sam_file"
+    # Sort BAM file
+    samtools sort -@ 8 -o "$BAM_DIR/${file_name}.bam" "$BAM_DIR/${file_name}_unsorted.bam"
+    # Optional: Remove the unsorted BAM file to save space
+    rm "$BAM_DIR/${file_name}_unsorted.bam"
 done
-
