@@ -54,3 +54,18 @@ if (all(colnames(raw_counts) == rownames(colData))) {
   print("Error: column names of raw_counts do not match row names of colData.")
 }
 
+
+### Save DESeq2 Separate Results ###############################################
+
+# Load dds
+dds <- readRDS("E:/S.bicolorRNAseq/data/rds/dds.rds")
+
+# Extract results under different comparisons
+res_seed_wt_dry <- DESeq2::results(dds, contrast = c("condition", "seed_wt", "seed_dry"))
+res_seed_wt_plasma <- DESeq2::results(dds, contrast = c("condition", "seed_wt", "seed_plasma"))
+res_shoot_wt_plasma <- DESeq2::results(dds, contrast = c("condition", "shoot_wt", "shoot_plasma"))
+
+# Save RDS
+saveRDS(res_seed_wt_dry, file = "E:/S.bicolorRNAseq/data/rds/res_seed_wt_dry.rds")
+saveRDS(res_seed_wt_plasma, file = "E:/S.bicolorRNAseq/data/rds/res_seed_wt_plasma.rds")
+saveRDS(res_shoot_wt_plasma, file = "E:/S.bicolorRNAseq/data/rds/res_shoot_wt_plasma.rds")
