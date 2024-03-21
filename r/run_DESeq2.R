@@ -61,11 +61,12 @@ if (all(colnames(raw_counts) == rownames(colData))) {
 dds <- readRDS("E:/S.bicolorRNAseq/data/rds/dds.rds")
 
 # Extract results under different comparisons
-res_seed_wt_dry <- DESeq2::results(dds, contrast = c("condition", "seed_wt", "seed_dry"))
-res_seed_wt_plasma <- DESeq2::results(dds, contrast = c("condition", "seed_wt", "seed_plasma"))
-res_shoot_wt_plasma <- DESeq2::results(dds, contrast = c("condition", "shoot_wt", "shoot_plasma"))
+dds_seed_wt_dry <- DESeq2::results(dds, contrast = c("condition", "seed_wt", "seed_dry"))
+dds_seed_wt_plasma <- DESeq2::results(dds, contrast = c("condition", "seed_wt", "seed_plasma"))
+dds_shoot_wt_plasma <- DESeq2::results(dds, contrast = c("condition", "shoot_wt", "shoot_plasma"))
 
 # Save RDS
-saveRDS(res_seed_wt_dry, file = "E:/S.bicolorRNAseq/data/rds/res_seed_wt_dry.rds")
-saveRDS(res_seed_wt_plasma, file = "E:/S.bicolorRNAseq/data/rds/res_seed_wt_plasma.rds")
-saveRDS(res_shoot_wt_plasma, file = "E:/S.bicolorRNAseq/data/rds/res_shoot_wt_plasma.rds")
+saveRDS(dds_seed_wt_dry, file = "E:/S.bicolorRNAseq/data/rds/dds_seed_wt_dry.rds")
+saveRDS(dds_seed_wt_plasma, file = "E:/S.bicolorRNAseq/data/rds/dds_seed_wt_plasma.rds")
+saveRDS(dds_shoot_wt_plasma, file = "E:/S.bicolorRNAseq/data/rds/dds_shoot_wt_plasma.rds")
+
