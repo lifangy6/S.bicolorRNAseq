@@ -16,7 +16,7 @@ par(mfrow=c(1,1))
 
 # Draw volcano plot
 with(dds_seed_wt_dry, plot(log2FoldChange, -log10(pvalue), pch=20, 
-                           main="Volcano Plot - Seed Wt vs. Dry (DESeq2)", 
+                           main="Volcano Plot - Seed WT vs. Dry (DESeq2)", 
                            sub="+1/-1 log2FC & <0.05 adjusted p-value", 
                            xlim=c(-10,10), ylim=c(0,30)))
 
@@ -29,7 +29,7 @@ with(subset(dds_seed_wt_dry, padj<.05 & abs(log2FoldChange)>1), points(log2FoldC
 par(mfrow=c(1,1))
 
 with(dds_seed_wt_plasma, plot(log2FoldChange, -log10(pvalue), pch=20, 
-                              main="Volcano Plot - Seed Wt vs. Plasma (DESeq2)", 
+                              main="Volcano Plot - Seed WT vs. Plasma (DESeq2)", 
                               sub="+1/-1 log2FC & <0.05 adjusted p-value", 
                               xlim=c(-10,10), ylim=c(0,30)))
 
@@ -41,7 +41,7 @@ with(subset(dds_seed_wt_plasma, padj<.05 & abs(log2FoldChange)>1), points(log2Fo
 par(mfrow=c(1,1))
 
 with(dds_shoot_wt_plasma, plot(log2FoldChange, -log10(pvalue), pch=20, 
-                               main="Volcano Plot - Shoot Wt vs. Plasma (DESeq2)", 
+                               main="Volcano Plot - Shoot WT vs. Plasma (DESeq2)", 
                                sub="+1/-1 log2FC & <0.05 adjusted p-value", 
                                xlim=c(-10,10), ylim=c(0,30)))
 
