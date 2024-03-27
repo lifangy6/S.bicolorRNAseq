@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE specimen SYSTEM "http://www.bar.utoronto.ca/efp/cgi-bin/data/efp_config.dtd">
+<specimen name="Sorghum">
+<view name="all" class="" db="sorghum_plasma" dbGroup="all" img="Sorghum_Plasma.png" table="sample_data">
+<lookup db="None" table="None" geneid_col="None"/>
+<coords graphX="13" graphY="0" graphWidth="60" graphHeight="80" legendX="701" legendY="9"/>
+<group name="seed_wt_1;seed_wt_2;seed_wt_3">
+<control sample="seed_wt_1"/>
+<control sample="seed_wt_2"/>
+<control sample="seed_wt_3"/>
+<tissue colorKey="#ffcc66" name="24-hour Imbibed Seed (Control)">
+<link url="http://bar.utoronto.ca/"/>
+<area coords="272,226,333,226,333,289,272,289"/>
+<sample name="seed_wt_1" />
+<sample name="seed_wt_2" />
+<sample name="seed_wt_3" />
+</tissue>
+<tissue colorKey="#ffcc00" name="24-hour Imbibed Seed with Plasma Treatment">
+<link url="http://bar.utoronto.ca/"/>
+<area coords="279,413,282,473,332,473,324,410,278,412"/>
+<sample name="seed_plasma_1" />
+<sample name="seed_plasma_2" />
+<sample name="seed_plasma_3" />
+</tissue>
+<tissue colorKey="#ff0000" name="Dry Seed">
+<link url="https://www.ncbi.nlm.nih.gov/sra?term=(seed)%20AND%20SRA558539"/>
+<area coords="68,298,119,298,119,358,68,358"/>
+<sample name="seed_dry_1" />
+<sample name="seed_dry_2" />
+<sample name="seed_dry_3" />
+</tissue>
+</group>
+<group name="shoot_wt_1;shoot_wt_2;shoot_wt_3">
+<control sample="shoot_wt_1"/>
+<control sample="shoot_wt_2"/>
+<control sample="shoot_wt_3"/>
+<tissue colorKey="#00ff66" name="4-week Shoot from 24-hour Imbibed Seed">
+<link url="http://bar.utoronto.ca/"/>
+<area coords="463,155,576,155,576,302,463,302"/>
+<sample name="shoot_wt_1" />
+<sample name="shoot_wt_2" />
+<sample name="shoot_wt_3" />
+</tissue>
+<tissue colorKey="#00ff00" name="4-week Shoot from Plasma-Treated 24-hour Imbibed Seed">
+<link url="http://bar.utoronto.ca/"/>
+<area coords="466,343,569,343,569,480,466,480"/>
+<sample name="shoot_plasma_1" />
+<sample name="shoot_plasma_2" />
+<sample name="shoot_plasma_3" />
+</tissue>
+</group>
+</view>
+</specimen>
