@@ -42,7 +42,8 @@ gene_length <- fc_result$annotation$Length
 tpm_counts <- run_TPM(raw_counts, gene_length)
 
 # Save TPM values
-saveRDS(tpm_counts, file = "E:/S.bicolorRNAseq/data/rds/tpm_counts.rds")
+saveRDS(tpm_counts, file = "E:/S.bicolorRNAseq/eFP/tpm/tpm_counts.rds")
+write.table(tpm_counts, file = "E:/S.bicolorRNAseq/eFP/tpm/Sbicolor_TPM.tsv", sep = "\t")
 
 
 ### Correlation Analysis #######################################################
