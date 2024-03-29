@@ -1,4 +1,4 @@
-# Sorghum bicolor RNA-Seq Analysis
+# *Sorghum bicolor* RNA-Seq Analysis
 
 Check repository [Wiki](https://github.com/lifangy6/S.bicolorRNAseq/wiki) for details
 
@@ -7,25 +7,31 @@ Check repository [Wiki](https://github.com/lifangy6/S.bicolorRNAseq/wiki) for de
 ```         
 .
 ├── bash                            # Bash scripts
+|   ├── cufflinks_4c.sh
+|   ├── cufflinks_5c.sh
 |   ├── hisat2.sh          
 ├── data                            # Data (BAM, GTF, rds...)
 |   ├── misc                
-|   ├── rds                 
+|   ├── rds
+|   ├── regulated_genes
 ├── eFP                             # eFP Browser
-|   ├── Sbicolor_eFP.png
-|   ├── sample_description.xlsx
+|   ├── configuration
+|   ├── image
+|   ├── tpm
 ├── figure                          # Figures produced
+|   ├── CufflinksDendro
+|   ├── DeepVenn
 |   ├── MAPlot
+|   ├── PCA
 |   ├── VolcanoPlot
 ├── r                               # R scripts
 |   ├── run_DESeq2.R
-|   ├── run_DESeq2_results.R
+|   ├── run_DE_regulated_genes.R
 |   ├── run_MAPlots.R
 |   ├── run_PCA.R
-|   ├── run_TPM.R
 |   ├── run_VolcanoPlots.R
+|   ├── run_cummeRbund.R
 |   ├── run_featureCounts.R
-|   ├── run_threshold_analysis.R
 ├── .gitignore
 ├── LICENSE
 ├── README.md
