@@ -11,6 +11,7 @@ Check repository [Wiki](https://github.com/lifangy6/S.bicolorRNAseq/wiki) for de
 |   ├── cufflinks_5c.sh
 |   ├── hisat2.sh          
 ├── data                            # Data (BAM, GTF, rds...)
+|   ├── cufflinks
 |   ├── misc                
 |   ├── rds
 |   ├── regulated_genes
@@ -23,6 +24,7 @@ Check repository [Wiki](https://github.com/lifangy6/S.bicolorRNAseq/wiki) for de
 |   ├── DeepVenn
 |   ├── MAPlot
 |   ├── PCA
+|   ├── QualityControl
 |   ├── VolcanoPlot
 ├── r                               # R scripts
 |   ├── run_DESeq2.R
