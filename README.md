@@ -28,7 +28,7 @@ Check repository [Wiki](https://github.com/lifangy6/S.bicolorRNAseq/wiki) for de
 |   ├── VolcanoPlot
 ├── r                               # R scripts
 |   ├── run_DESeq2.R
-|   ├── run_DE_regulated_genes.R
+|   ├── run_DESeq2_regulated_genes.R
 |   ├── run_MAPlots.R
 |   ├── run_PCA.R
 |   ├── run_VolcanoPlots.R
