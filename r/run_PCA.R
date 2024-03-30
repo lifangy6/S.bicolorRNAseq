@@ -4,7 +4,6 @@ if (!requireNamespace("BiocManager", quietly = TRUE))
 BiocManager::install("DESeq2")
 install.packages("ggplot2")
 install.packages("plotly")  
-
 library(DESeq2)
 library(ggplot2)
 library(plotly)
