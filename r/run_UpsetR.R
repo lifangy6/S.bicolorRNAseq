@@ -2,7 +2,7 @@
 install.packages("UpSetR")
 library(UpSetR)
 
-
+### All 14 #####################################################################
 # Set the directory where gene lists are stored
 gene_list_directory <- "E:/S.bicolorRNAseq/data/regulated_genes/genes_edited"
 
@@ -27,3 +27,9 @@ for (file in gene_list_files) {
 # Create an UpSetR plot
 upSetData <- UpSetR::fromList(gene_sets)
 UpSetR::upset(upSetData, nsets = 14, order.by = "freq")
+
+
+### DESeq2 Only ################################################################
+DESeq2_gene_sets <- gene_sets[9:14]
+UpSetData_DESeq2 <- UpSetR::fromList(DESeq2_gene_sets)
+UpSetR::upset(UpSetData_DESeq2, nsets = 6, order.by = "freq")
