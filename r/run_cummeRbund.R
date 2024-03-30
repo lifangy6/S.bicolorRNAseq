@@ -29,9 +29,11 @@ diff_5c <- cummeRbund::diffData(cummeRbund::genes(cuff_5c))
 diff_tak <- cummeRbund::diffData(cummeRbund::genes(cuff_tak))
 
 # Subset Tak's results
-cuff_seed_wt_plasma <- subset(diff_tak, sample_1 == "WT_seed" & sample_2 == "plasma_seed")
-cuff_shoot_wt_plasma <- subset(diff_tak, sample_1 == "WT" & sample_2 == "plasma")
+cuff_tak_seed_wt_plasma <- subset(diff_tak, sample_1 == "WT_seed" & sample_2 == "plasma_seed")
+cuff_tak_shoot_wt_plasma <- subset(diff_tak, sample_1 == "WT" & sample_2 == "plasma")
 
+cuff_seed_wt_plasma <- subset(diff_4c, sample_1 == "seed_wt" & sample_2 == "seed_plasma")
+cuff_shoot_wt_plasma <- subset(diff_4c, sample_1 == "shoot_wt" & sample_2 == "shoot_plasma")
 
 #' Write Cufflinks Results to Files
 #' 
@@ -58,6 +60,8 @@ write_cuff_data <- function(data, middle_part, up_threshold = 1, down_threshold 
 
 
 # Write files
-
 write_cuff_data(cuff_seed_wt_plasma, "seed_wt_plasma")
 write_cuff_data(cuff_shoot_wt_plasma, "shoot_wt_plasma")
+
+write_cuff_data(cuff_tak_seed_wt_plasma, "tak_seed_wt_plasma")
+write_cuff_data(cuff_tak_shoot_wt_plasma, "tak_shoot_wt_plasma")
