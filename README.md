@@ -6,39 +6,43 @@ Check repository [Wiki](https://github.com/lifangy6/S.bicolorRNAseq/wiki) for de
 
 ```         
 .
-├── bash                            # Bash scripts
-|   ├── cufflinks_4c.sh
-|   ├── cufflinks_5c.sh
-|   ├── hisat2.sh          
-├── data                            # Data (BAM, GTF, rds...)
-|   ├── cufflinks
-|   ├── misc                
-|   ├── rds
-|   ├── regulated_genes
-├── eFP                             # eFP Browser
-|   ├── configuration
-|   ├── image
-|   ├── tpm
-├── figure                          # Figures produced
-|   ├── CufflinksDendro
-|   ├── DeepVenn
-|   ├── IGV
-|   ├── MAPlot
-|   ├── PCA
-|   ├── QualityControl
-|   ├── UpsetR
-|   ├── VolcanoPlot
-├── r                               # R scripts
-|   ├── run_DESeq2.R
-|   ├── run_DESeq2_regulated_genes.R
-|   ├── run_MAPlots.R
-|   ├── run_PCA.R
-|   ├── run_UpsetR.R
-|   ├── run_VolcanoPlots.R
-|   ├── run_cummeRbund.R
-|   ├── run_featureCounts.R
-├── .gitignore
-├── LICENSE
-├── README.md
-└── S.bicolorRNAseq.Rproj
+├───bash                                  # Bash scripts
+├───data                                  # Data files (BAM, GTF, rds, ...)
+│   ├───cufflinks
+│   │   ├───cufflinks_4c
+│   │   ├───cufflinks_5c
+│   │   ├───cufflinks_tak
+│   │   └───cufflinks_tak_replicates
+│   ├───enrichment
+│   │   ├───agriGO
+│   │   ├───gProfiler
+│   │   └───PlantRegMap
+│   ├───misc
+│   │   ├───bam_files
+│   │   └───bam_files_unsorted
+│   ├───rds
+│   └───regulated_genes
+│       ├───CSV
+│       ├───genes
+│       └───genes_edited
+├───eFP                                   # eFP browser
+│   ├───configuration
+│   ├───image
+│   └───tpm
+├───figure                                # Figures produced
+│   ├───agriGO
+│   ├───CufflinksDendro
+│   ├───DeepVenn
+│   ├───gProfiler
+│   ├───IGV
+│   ├───MAPlot
+│   ├───PCA
+│   ├───PlantRegMap
+│   ├───QualityControl
+│   ├───UpsetR
+│   └───VolcanoPlot
+└───r                                     # R scripts
+└───.gitignore
+└───README.md
+└───S.bicolorRNAseq.Rproj
 ```
