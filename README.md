@@ -41,8 +41,10 @@ Check repository [Wiki](https://github.com/lifangy6/S.bicolorRNAseq/wiki) for de
 │   ├───QualityControl
 │   ├───UpsetR
 │   └───VolcanoPlot
-└───r                                     # R scripts
-└───.gitignore
-└───README.md
+├───r                                     # R scripts
+├───report                                # Final report
+│   └───LaTex
+├───.gitignore
+├───README.md
 └───S.bicolorRNAseq.Rproj
 ```
